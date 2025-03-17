@@ -10,13 +10,14 @@ class Director(models.Model):
     director_name=models.CharField(max_length=30)
     age=models.IntegerField()
     is_active=models.BooleanField(default=False)
-
+    bio=models.TextField()
     def __str__(self):
         return self.director_name
 class Actor(models.Model):
     actor_name=models.CharField(max_length=30)
     age=models.IntegerField()
     is_active=models.BooleanField(default=False)
+    bio=models.TextField()
     # actor_image=models.ImageField(upload_to='#')
 
     def __str__(self):
